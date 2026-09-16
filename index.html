@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Singh Cafe - Receipt Generator</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <title>Singh Cafe</title>
 
     <link rel="stylesheet"
           href="https://pyscript.net/releases/2026.7.3/core.css">
+
     <script type="module"
-            src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+            src="https://pyscript.net/releases/2026.7.3/core.js">
+    </script>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -51,16 +56,20 @@
         Caramel Macchiato - ₱170
     </label>
 
-    <button id="create-order" py-click="create_order">
+    <button py-click="create_order">
         Create Order
     </button>
 
-    <div id="receipt" style="display: none;">
+    <div id="receipt">
+
         <h2>Receipt:</h2>
 
-        <p>Subtotal: ₱<span id="subtotal">0.00</span></p>
-        <p>VAT: ₱<span id="vat">0.00</span></p>
-        <p>Total Amount: ₱<span id="total">0.00</span></p>
+        <p>Subtotal: ₱<span id="subtotal">0</span></p>
+
+        <p>VAT: ₱<span id="vat">0</span></p>
+
+        <p>Total Amount: ₱<span id="total">0</span></p>
+
     </div>
 
     <script type="py" src="main.py"></script>
