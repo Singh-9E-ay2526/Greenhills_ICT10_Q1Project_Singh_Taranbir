@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+
     <title>Singh Cafe - SKU Generator</title>
 
     <link rel="stylesheet"
           href="https://pyscript.net/releases/2026.7.3/core.css">
+
     <script type="module"
-            src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+            src="https://pyscript.net/releases/2026.7.3/core.js">
+    </script>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,16 +32,29 @@
 
     <label>
         Product Category:
-        <input type="text" id="category">
+
+        <select id="category">
+            <option value="COF">Coffee</option>
+            <option value="LAT">Latte</option>
+            <option value="DES">Dessert</option>
+        </select>
     </label>
 
     <label>
         Product Name:
-        <input type="text" id="product-name">
+
+        <select id="product-name">
+            <option value="AMER">Americano</option>
+            <option value="SPAN">Spanish Latte</option>
+            <option value="COLD">Cold Brew Malt</option>
+            <option value="AFFO">Affogato</option>
+            <option value="CARA">Caramel Macchiato</option>
+        </select>
     </label>
 
     <label>
         Stock Quantity:
+
         <input type="number" id="quantity">
     </label>
 
@@ -44,11 +63,14 @@
     </button>
 
     <div id="sku-result">
+
         <h2>Generated SKU:</h2>
+
         <p id="sku">---</p>
+
     </div>
 
-    <script type="py" src="sku.py"></script>
+    <script type="py" src="main.py"></script>
 
 </body>
 </html>
