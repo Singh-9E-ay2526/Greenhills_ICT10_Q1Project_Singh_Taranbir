@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singh Cafe - SKU Generator</title>
+
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module"
+            src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Singh Cafe</h1>
+
+    <nav>
+        <a href="index.html">Receipt Generator</a>
+        <a href="sku.html">SKU Generator</a>
+    </nav>
+
+    <h2>SKU Generator</h2>
+
+    <label>
+        Product Category:
+        <input type="text" id="category">
+    </label>
+
+    <label>
+        Product Name:
+        <input type="text" id="product-name">
+    </label>
+
+    <label>
+        Stock Quantity:
+        <input type="number" id="quantity">
+    </label>
+
+    <button py-click="generate_sku">
+        Generate SKU
+    </button>
+
+    <div id="sku-result">
+        <h2>Generated SKU:</h2>
+        <p id="sku">---</p>
+    </div>
+
+    <script type="py" src="sku.py"></script>
+
+</body>
+</html>

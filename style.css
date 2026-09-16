@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    background-color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+input {
+    margin: 5px;
+    padding: 7px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#receipt,
+#sku-result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#receipt p,
+#sku-result p {
+    font-size: 18px;
+}
